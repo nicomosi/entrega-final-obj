@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Producto;
-
+use App\Carrito;
+use Session;
 class ProductosController extends Controller
 {
     /**
@@ -18,6 +19,39 @@ class ProductosController extends Controller
         return view('index')->with('productos', $productos);
     }
 
+    public function view(){
+       $productos = Producto::all();
+       return view('productos')->with('productos', $productos);
+    }
+
+    public function getCarrito()
+    {
+        if (!Session::has('carrito')) {
+            return view('carrito');
+        }
+        $carritoViejo=Session::get('carrito');
+        $carrito=new Carrito($carritoViejo);
+        return view('carrito', ['productos'=>$carrito->items, 'precioTotal'=>$carrito->precioTotal]);
+    }
+
+    // A la función getAgregar item necesito pasarle como primer parametro
+    // request y como segundo parametro $id para que reciba el product id por get.
+    // Pasandole el request tambíen va a hacer que se guarde la sesión.
+    // Request crea el objeto request.
+    public function getAgregarItem(Request $request, $id){
+        $nuevoItem=Producto::find($id);
+        $carritoViejo=Session::has('carrito') ? Session::get('carrito') : null;
+        $carrito= new Carrito($carritoViejo);
+        $carrito->agregarItem($nuevoItem, $nuevoItem->id);
+
+        $request->session()->put('carrito', $carrito);
+        // dd($request->session()->get('carrito'));
+        return redirect()->route('productosShow');
+    }
+
+    public function deleteCart(){
+
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -85,16 +119,4 @@ class ProductosController extends Controller
         //
     }
 
-    public function view(){
-       $productos = Producto::all();
-       return view('/productos')->with('productos', $productos);
-    }
-
-    public function addCart(){
-
-    }
-
-    public function deleteCart(){
-        
-    }
 }

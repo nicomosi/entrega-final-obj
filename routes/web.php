@@ -20,6 +20,17 @@ Auth::routes();
 // Route::get('/login', 'HomeController@index')->name('login');
 Route::get('/home', 'HomeController@index');
 
+
+Route::get('/mi-carrito', [
+    'uses'=>'ProductosController@getCarrito',
+    'as'=>'miCarrito'
+]);
+Route::get('/agregarItem/{id}',[
+    'uses'=>'ProductosController@getAgregarItem',
+    'as'=>'agregarItem'
+]);
+
+
 Route::get('/producto/{id}', 'ProductosController@show');
 
 Route::get('/productos', 'ProductosController@view')->name('productosShow');

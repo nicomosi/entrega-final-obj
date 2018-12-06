@@ -40,12 +40,12 @@
                                 @endif
                                 <div class="separator"></div>
                                 @else
-                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect button button-white button-sm m-1" id="my-account"><i class="icon-user-follow mr-2"></i>My Account</a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect button button-white button-sm m-1" id="my-account"><i class="icon-user-follow mr-2"></i>Mi Cuenta</a>
                                 @endguest
                             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="my-account">
 
                                 <li class="mdl-menu__item">Mi Perfil</li>
-                                <li class="mdl-menu__item">Change Password</li>
+                                <li class="mdl-menu__item">Cambiar Contraseña</li>
                                 @guest
 
                                 @else
@@ -58,7 +58,7 @@
                                     <a class="" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar Sesión') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -88,164 +88,6 @@
                                 <li class="menu-megamenu-li">
                                     <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="{{route('productosShow')}}">Viandas</a>
                                 </li>
-                                {{-- <li>
-                                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect">Feature <i class="fa fa-chevron-down"></i></a>
-                                    <ul class="menu-dropdown">
-                                        <li>
-                                            <a>Property</a>
-                                            <ul class="menu-dropdown">
-                                                <li><a href="property-1.html">Property Listing 1</a></li>
-                                                <li><a href="property-2.html">Property Listing 2</a></li>
-                                                <li><a href="property-3.html">Property Listing 3</a></li>
-                                                <li><a href="property-page.html">Property Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Page Header</a>
-                                            <ul class="menu-dropdown">
-                                                <li><a href="page-header-1.html">Page Header 1</a></li>
-                                                <li><a href="page-header-2.html">Page Header 2</a></li>
-                                                <li><a href="page-header-3.html">Page Header 3</a></li>
-                                                <li><a href="page-header-4.html">Page Header 4</a></li>
-                                                <li><a href="page-header-5.html">Page Header 5</a></li>
-                                                <li><a href="page-header-6.html">Page Header 6</a></li>
-                                                <li><a href="page-header-7.html">Page Header 7</a></li>
-                                                <li><a href="page-header-8.html">Page Header 8</a></li>
-                                                <li><a href="page-header-9.html">Page Header 9</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Page Footer</a>
-                                            <ul class="menu-dropdown menu-dropdown-left">
-                                                <li><a href="page-footer-1.html">Page Footer 1</a></li>
-                                                <li><a href="page-footer-2.html">Page Footer 2</a></li>
-                                                <li><a href="page-footer-3.html">Page Footer 3</a></li>
-                                                <li><a href="page-footer-4.html">Page Footer 4</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Side Panel</a>
-                                            <ul class="menu-dropdown">
-                                                <li><a href="side-panel-1.html">Light Side Panel</a></li>
-                                                <li><a href="side-panel-2.html">Dark Side Panel</a></li>
-                                                <li><a href="side-panel-3.html">Colored Side Panel</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="popup.html">Popups</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a href="404.html">404 Page Not Found</a></li>
-                                        <li><a href="503.html">503 Temporarily Unavailable</a></li>
-                                    </ul>
-                                </li> --}}
-                                {{-- <li class="menu-megamenu-li">
-                                    <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect">Viandas <i class="fa fa-chevron-down"></i></a>
-                                    <ul class="menu-megamenu">
-                                        <li class="row">
-                                            <div class="col-lg-2">
-                                                <div class="megamenu-ttl">Viandas Comunes</div>
-                                                <ul>
-                                                    <li><a href="">Vianda 1</a></li>
-                                                    <li><a href="">Vianda 2</a></li>
-                                                    <li><a href="">Vianda 3</a></li>
-                                                    <li><a href="">Vianda 4</a></li>
-                                                    <li><a href="">Vianda 5</a></li>
-                                                    <li><a href="">Vianda 6</a></li>
-                                                    <li><a href="">Vianda 7</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="megamenu-ttl">Viandas Veggie</div>
-                                                <ul>
-                                                    <li><a href="">Vianda 1</a></li>
-                                                    <li><a href="">Vianda 2</a></li>
-                                                    <li><a href="">Vianda 3</a></li>
-                                                    <li><a href="">Vianda 4</a></li>
-                                                    <li><a href="">Vianda 5</a></li>
-                                                    <li><a href="">Vianda 6</a></li>
-                                                    <li><a href="">Vianda 7</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="megamenu-ttl">Aumento de Masa Muscular</div>
-                                                <ul>
-                                                    <li><a href="">Vianda 1</a></li>
-                                                    <li><a href="">Vianda 2</a></li>
-                                                    <li><a href="">Vianda 3</a></li>
-                                                    <li><a href="">Vianda 4</a></li>
-                                                    <li><a href="">Vianda 5</a></li>
-                                                    <li><a href="">Vianda 6</a></li>
-                                                    <li><a href="">Vianda 7</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="megamenu-ttl">Reducción de Peso</div>
-                                                <ul>
-                                                    <li><a href="">Vianda 1</a></li>
-                                                    <li><a href="">Vianda 2</a></li>
-                                                    <li><a href="">Vianda 3</a></li>
-                                                    <li><a href="">Vianda 4</a></li>
-                                                    <li><a href="">Vianda 5</a></li>
-                                                    <li><a href="">Vianda 6</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="megamenu-ttl">Info Pages</div>
-                                                <ul>
-                                                    <li><a href="about-1.html">About Us Style 1</a></li>
-                                                    <li><a href="about-2.html">About Us Style 2</a></li>
-                                                    <li><a href="about-3.html">About Us Style 3</a></li>
-                                                    <li><a href="contact-1.html">Contact Us Style 1</a></li>
-                                                    <li><a href="contact-2.html">Contact Us Style 2</a></li>
-                                                    <li><a href="gallery-1.html">Gallery Style</a></li>
-                                                    <li><a href="faq.html">FAQ</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <div class="megamenu-ttl">Other Pages</div>
-                                                <ul>
-                                                    <li><a href="event-1.html">Event Style 1</a></li>
-                                                    <li><a href="event-2.html">Event Style 2</a></li>
-                                                    <li><a href="event-3.html">Event Style 3</a></li>
-                                                    <li><a href="event-4.html">Event Style 4</a></li>
-                                                    <li><a href="event-page-1.html">Event Details Page</a></li>
-                                                    <li><a href="signin.html">Sign In or Login</a></li>
-                                                    <li><a href="signup.html">Sign Up or Register</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li> --}}
-                                {{-- <li>
-                                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect">Blog <i class="fa fa-chevron-down"></i></a>
-                                    <ul class="menu-dropdown">
-                                        <li>
-                                            <a>Visitar Blog</a>
-                                            <ul class="menu-dropdown menu-dropdown-left">
-                                                <li><a href="">Articulos de Salúd</a></li>
-                                                <li><a href="">Articulos de Nutrición</a></li>
-                                                <li><a href="">Articulos de Deportes</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Portfolio Wide</a>
-                                            <ul class="menu-dropdown menu-dropdown-left">
-                                                <li><a href="portfolio-4.html">Wide Portfolio</a></li>
-                                                <li><a href="portfolio-5.html">No Spacing Portfolio</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Portfolio Masonary</a>
-                                            <ul class="menu-dropdown menu-dropdown-left">
-                                                <li><a href="portfolio-6.html">3 Column Portfolio</a></li>
-                                                <li><a href="portfolio-7.html">4 Column Portfolio</a></li>
-                                                <li><a href="portfolio-8.html">Wide Portfolio</a></li>
-                                                <li><a href="portfolio-9.html">No Spacing Portfolio</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-                                        <li><a href="portfolio-list.html">Portfolio List</a></li>
-                                    </ul>
-                                </li> --}}
                                 <li class="menu-megamenu-li">
                                     <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="{{url('faq')}}">Faq</a>
                                 </li>
@@ -253,8 +95,8 @@
                                     <a class="mdl-button mdl-js-button mdl-js-ripple-effect btn" href="#" data-toggle="modal" data-target="#contactPopup">Contacto</a>
                                 </li>
                                 <li class="menu-megamenu-li">
-                                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect hdr-basket" href="#"><i class="fa fa-cart-plus"></i><span class="cart-count">2</span></a>
-                                    <ul class="menu-megamenu menu-cart">
+                                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect hdr-basket" href="{{route('miCarrito')}}"><i class="fa fa-cart-plus"></i><span class="cart-count">{{Session::has('carrito') ? Session::get('carrito')->cantidadTotal : ''}}</span></a>
+                                    {{-- <ul class="menu-megamenu menu-cart">
                                         <li class="cart-overview">
                                             <a href="#" class="row">
                                                 <div class="col-4 pr-0 cart-img">
@@ -289,11 +131,11 @@
                                                 <p class="font-dosis font-20 m-0">Total : $98</p>
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <a class="mdl-button mdl-js-button mdl-js-ripple-effect hdr-search" href="#"><i class="fa fa-search"></i></a>
-                                </li>
+                                </li> --}}
                                 <li class="mobile-menu-close"><i class="fa fa-times"></i></li>
                             </ul><!-- End Menu Section -->
                             <div id="menu-bar"><a><i class="fa fa-bars"></i></a></div>

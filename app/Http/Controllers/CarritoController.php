@@ -15,7 +15,7 @@ class CarritoController extends Controller
      */
     public function index()
     {
-
+        return view('carrito');
     }
 
     /**

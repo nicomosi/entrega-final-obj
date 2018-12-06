@@ -94,7 +94,7 @@
                                                     <i class="fa fa-star-o"></i>
                                                 </div>
                                                 <div>
-                                                    <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Add to Cart</a>
+                                                    <a href="{{route('agregarItem', ['id'=>$producto->id])}}" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Add to Cart</a>
                                                     <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Buy Now</a>
                                                 </div>
                                             </div>

@@ -297,13 +297,7 @@
     </div>
     <!-- **********Included Scripts*********** -->
 
-    <script>
-        
-        function addCarrito{
-            
-        }
 
-    </script>
 
     <!-- Jquery Library 2.1 JavaScript-->
     <script src="assets/plugin/jquery/jquery-2.1.4.min.js"></script>
