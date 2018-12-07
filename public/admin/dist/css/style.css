@@ -10580,7 +10580,8 @@ select.form-control:not([size]):not([multiple]) {
   #logo a {
     display: inline-block; }
   #logo img {
-    max-height: 40px; }
+    /* max-height: 40px;  */
+}
 
 .logo-icon {
   display: none;

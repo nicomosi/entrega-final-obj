@@ -38,8 +38,8 @@ class ConsultaController extends Controller
         $validation =[
             'nombre'=>'required',
             'email'=>'required|email',
-            'celular'=>'required',
-            'mensaje'=>'required'
+            'celular'=>'required|integer',
+            'mensaje'=>'required|string'
         ];
 
 

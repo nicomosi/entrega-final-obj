@@ -6,8 +6,8 @@
                             <div class="tbl-cell logo-icon">
                                 <a href="#"><img src="images/icon.png" alt=""></a>
                             </div>
-                            <div class="tbl-cell logo">
-                                <a href="#"><img src="images/logo.png"></a>
+                            <div class="tbl-cell logo ">
+                                <a href="#"><img src="{{url('img/logo-food.png')}}" style=" height:60px;margin-left:7vw;"></a>
                             </div>
                         </div>
                         <div class="page-menu menu-icon">

@@ -74,10 +74,10 @@
                                                                         <div class="ticket-text">Área - Ventas</div>
                                                                     </div>
                                                                 </div>
-                                                                {{-- <div class="col-sm-6 col-md-7 ticket-subject">
-                                                                    <span>Asunto</span>
-                                                                    <p>Theme is not installing</p>
-                                                                </div> --}}
+                                                                <div class="col-sm-6 col-md-7 ticket-subject">
+                                                                    <span>Consulta</span>
+                                                                    <p>{{$consulta->mensaje}}</p>
+                                                                </div>
                                                             </div>
                                                             <div class="row ticket-ftr align-items-center">
                                                                 <div class="col-sm-8 text-left">

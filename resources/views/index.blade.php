@@ -18,9 +18,8 @@
 
                             <div class="layer-stretch">
                                 <div class="slider-info">
-                                    <br>
                                     <h1>Una vianda, un objetivo</h1>
-                                    <p>¿Llevar a cabo una dieta se esta volviendo dificil?<br> En <strong>Objective Food</strong> nos encargamos de que tus comidas sean <strong> ricas </strong>, <strong>nutritivas </strong> y <strong>prácticas</strong>. <br><br>¡Alcanzá tus metas sin preocupaciones!</p>
+                                    <p>¿Llevar a cabo una dieta se esta volviendo dificil?<br> En <strong>Objective Food</strong> nos encargamos de que tus comidas sean <strong> ricas </strong>, <strong>nutritivas </strong> y <strong>prácticas</strong>.<br>¡Alcanzá tus metas sin preocupaciones!</p>
                                     <div class="slider-button">
                                         <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect button button-primary button-pill">Ver Más</a>
                                     </div>
@@ -73,7 +72,7 @@
                                         <i class="fa fa-star-o"></i>
                                     </div>
                                     <div>
-                                        <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Agregar al Carrito</a>
+                                        <a href="{{route('agregarItem', ['id'=>$producto->id])}}" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Agregar al Carrito</a>
                                         <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Comprar</a>
                                     </div>
                                 </div>
