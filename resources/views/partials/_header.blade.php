@@ -77,7 +77,7 @@
                     <div class="tbl-row">
                         <!-- Start Header Logo Section -->
                         <div class="tbl-cell hdr-logo">
-                            <a href="index.html"><img src="images/logo-black.png" alt=""></a>
+                            <a href="index.html"><img src="{{url('img/logo-food.png')}}" style="height:50px;"alt=""></a>
                         </div><!-- End Header Logo Section -->
                         <div class="tbl-cell hdr-menu">
                             <!-- Start Menu Section -->
