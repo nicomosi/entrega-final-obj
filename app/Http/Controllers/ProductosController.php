@@ -28,10 +28,11 @@ class ProductosController extends Controller
     {
         if (!Session::has('carrito')) {
             return view('carrito');
+        }else{
+            $carritoViejo=Session::get('carrito');
+            $carrito=new Carrito($carritoViejo);
+            return view('carrito', ['productos'=>$carrito->items, 'precioTotal'=>$carrito->precioTotal]);
         }
-        $carritoViejo=Session::get('carrito');
-        $carrito=new Carrito($carritoViejo);
-        return view('carrito', ['productos'=>$carrito->items, 'precioTotal'=>$carrito->precioTotal]);
     }
 
     // A la función getAgregar item necesito pasarle como primer parametro
@@ -49,7 +50,7 @@ class ProductosController extends Controller
         return redirect()->route('productosShow');
     }
 
-    public function deleteCart(){
+    public function deleteCarrito(){
 
     }
     /**

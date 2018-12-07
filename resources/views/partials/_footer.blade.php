@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+{{-- <!DOCTYPE html>
+<html lang="en"> --}}
 @include('partials._head')
 {{-- <body> --}}
     {{-- <div class="wrapper"> --}}
@@ -13,11 +13,9 @@
                 <div>
                     <ul class="footer-menu footer-menu-inline">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Viandas</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="pb-3">
@@ -41,7 +39,7 @@
             <!-- Start Copyright Section -->
             <div id="copyright">
                 <div class="layer-stretch">
-                    <div class="paragraph-medium">2017 © Pepdev ALL RIGHTS RESERVED.</div>
+                    <div class="paragraph-medium">2018 © Objective Food.</div>
                 </div>
             </div><!-- End of Copyright Section -->
         </footer><!-- End of Footer Section -->

@@ -33,13 +33,13 @@
         </div><!-- End Slider Section -->
 
         <div class="ecommerce">
-            <div class="layer-stretch">
+            <div class="layer-stretch col-sm-12 col-md-12 col-lg-10">
                 <div class="layer-wrapper pb-20">
                     <div class="layer-ttl"><h4>Productos <span class="text-primary">Destacados</span></h4></div>
                     <div class="row pt-4">
-                        
+
                         @foreach(App\Producto::where('destacado', 1)->get() as $producto)
-                        
+
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="product-card">
                                 <div class="product-img">

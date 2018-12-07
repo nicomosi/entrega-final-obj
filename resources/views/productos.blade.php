@@ -35,7 +35,6 @@
             <div class="layer-stretch">
                 <div class="page-ttl-container">
                     <h1>Viandas</h1>
-                    <p><a href="{{Route('home')}}">Inicio</a> &#8594; <span>Productos</span></p>
                 </div>
             </div>
         </div><!-- End Page Title Section -->
@@ -48,16 +47,16 @@
                             <div class="row align-items-center shop-filter">
                                 <div class="col-sm-4">
                                     <select class="custom-select">
-                                        <option>Default sorting</option>
-                                        <option>Sort by popularity</option>
-                                        <option>Sort by average ratings</option>
-                                        <option>Sort by newness</option>
-                                        <option>Sort by price: low to high</option>
-                                        <option>Sort by price: high to low</option>
+                                        <option>Aleatorio</option>
+                                        <option>Filtrar por más buscados</option>
+                                        <option>Filtrar por rating</option>
+                                        <option>Filtrar por más recientes</option>
+                                        <option>Filtrar por precio: menor a mayor</option>
+                                        <option>Filtrar por precio: mayor a menor</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-8 text-right">
-                                    <p class="m-0">Showing 1–10 of 55 results</p>
+                                    <p class="m-0">Mostrando 1–10 de 55 resultados</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -94,8 +93,8 @@
                                                     <i class="fa fa-star-o"></i>
                                                 </div>
                                                 <div>
-                                                    <a href="{{route('agregarItem', ['id'=>$producto->id])}}" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Add to Cart</a>
-                                                    <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Buy Now</a>
+                                                    <a href="{{route('agregarItem', ['id'=>$producto->id])}}" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Agregar al CArrito</a>
+                                                    <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Comprar</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -107,23 +106,20 @@
                             <div class="panel panel-default eventp-sidebar">
                                 <div class="panel-head">
                                     <div class="panel-title">
-                                        <span class="panel-title-text">Product Category</span>
+                                        <span class="panel-title-text">Categorías</span>
                                     </div>
                                 </div>
                                 <div class="panel-body">
                                     <ul class="category-list">
-                                        <li><a href="#"><i class="icon-arrow-right"></i>News</a><span>(10)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>History</a><span>(20)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Mythology</a><span>(9)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Technology</a><span>(21)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Science</a><span>(13)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>New Disese</a><span>(7)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Health</a><span>(5)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>wellness</a><span>(8)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Nuevas Viandas</a><span>(10)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Para Adelgazar</a><span>(21)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Para aumentar masa muscular</a><span>(13)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Para dietas especificas</a><span>(7)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Para darse un gusto</a><span>(5)</span></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="panel panel-default eventp-sidebar">
+                            {{-- <div class="panel panel-default eventp-sidebar">
                                 <div class="panel-head">
                                     <div class="panel-title">
                                         <span class="panel-title-text">Latest Product</span>
@@ -203,8 +199,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="panel panel-default eventp-sidebar">
+                            </div> --}}
+                            {{-- <div class="panel panel-default eventp-sidebar">
                                 <div class="panel-head">
                                     <div class="panel-title">
                                         <span class="panel-title-text">Featured Product</span>
@@ -231,8 +227,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default eventp-sidebar">
+                            </div> --}}
+                            {{-- <div class="panel panel-default eventp-sidebar">
                                 <div class="panel-head">
                                     <div class="panel-title">
                                         <span class="panel-title-text">Product Tag</span>
@@ -252,7 +248,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

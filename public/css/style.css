@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------
+//*------------------------------------------------------------------
 [Master SASS Stylesheet]
 
 Project  :  APEZ Template
@@ -7302,7 +7302,7 @@ body {
 /* [ LAYOUT CSS START ] */
 .layer-stretch {
   position: relative;
-  max-width: 1170px;
+  max-width: 80vw;
   padding: 0 15px;
   margin: 0 auto;
   overflow: hidden; }
@@ -7650,12 +7650,12 @@ body {
 .page-ttl {
   position: relative;
   width: 100%;
-  padding: 110px 0 40px 0;
+  padding: 300px 0 40px 0;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../uploads/slider-1.jpg); }
+  background-image: url(../img/banner-2.jpeg); }
   .page-ttl::before {
     content: '';
     position: absolute;
@@ -7672,7 +7672,7 @@ body {
   text-align: center; }
   .page-ttl-container h1 {
     position: relative;
-    font-size: 42px;
+    font-size: 62px;
     font-weight: 500;
     color: #FFF;
     display: inline-block;
@@ -9329,7 +9329,7 @@ body {
 **************************************************/
 /* [ BANNER CSS START ] */
 #slider {
-  height: 84vh; }
+  height: 60vh; }
 
 .slider-wrapper {
   height: 100%;
@@ -9385,7 +9385,7 @@ body {
     animation-delay: .6s; }
 
 .slider-button {
-  padding: 40px 0 10px 0; }
+  padding: 5px 0 10px 0; }
   .slider-button a.mdl-button {
     font-size: 16px;
     padding: 16px 28px; }
@@ -9417,7 +9417,7 @@ body {
   background: linear-gradient(-90deg, rgba(0, 93, 83, 0.8), rgba(0, 150, 134, 0.8)); }
 
 .slider-half .slider-info {
-  width: 50%;
+  width: 50vw;
   text-align: left;
   padding: 20px; }
 .slider-half li .slider-bnnr {

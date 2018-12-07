@@ -31,6 +31,9 @@ class Carrito
     public function agregarItem($item, $id)
     {
         // item guardado representa el "grupo" del que hable antes
+        // item guardado es un array que establece que la cantidad inicial del item
+        // es 0, el precio es es el precio del producto que recibe u el nombre
+        // es el nombre del producto que recibe
         $itemGuardado=['cantidad'=>0,'precio'=>$item->precio,'item'=>$item];
         // Checkeo si el carrito ya tiene items o si es nuevo (esta vacío).
         if ($this->items) {
@@ -48,4 +51,5 @@ class Carrito
         $this->cantidadTotal++;
         $this->precioTotal+=$item->precio;
     }
+
 }
