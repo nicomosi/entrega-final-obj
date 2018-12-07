@@ -104,3 +104,5 @@ Route::delete('/adm/productos/{id}/delete', [
     'middleware' => 'roles',
     'roles' => ['admin', 'superAdmin']
 ]);
+
+Route::get('/storage-ink', 'LinkController@storagelink');
