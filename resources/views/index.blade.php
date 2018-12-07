@@ -67,7 +67,7 @@
                                         <i class="fa fa-star-o"></i>
                                     </div>
                                     <div>
-                                        <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Agregar al Carrito</a>
+                                        <a href="{{route('agregarItem', ['id'=>$producto->id])}}" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Agregar al Carrito</a>
                                         <a href="#" class="btn btn-outline btn-dark btn-outline-1x btn-sm m-1">Comprar</a>
                                     </div>
                                 </div>
