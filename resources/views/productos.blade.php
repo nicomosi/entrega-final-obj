@@ -112,10 +112,10 @@
                                 <div class="panel-body">
                                     <ul class="category-list">
                                         <li><a href="#"><i class="icon-arrow-right"></i>Nuevas Viandas</a><span>(10)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Para Adelgazar</a><span>(21)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Para aumentar masa muscular</a><span>(13)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Para dietas especificas</a><span>(7)</span></li>
-                                        <li><a href="#"><i class="icon-arrow-right"></i>Para darse un gusto</a><span>(5)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Adelgazar</a><span>(21)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Aumentar masa muscular</a><span>(13)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Dietas especificas</a><span>(7)</span></li>
+                                        <li><a href="#"><i class="icon-arrow-right"></i>Darse un gusto</a><span>(5)</span></li>
                                     </ul>
                                 </div>
                             </div>
