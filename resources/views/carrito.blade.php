@@ -50,7 +50,7 @@
 <div class="row d-flex justify-content-center">
     <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3 col-lg-4 d-flex justify-content-center flex-wrap">
         <div style="width:100%; text-align:center">
-            <h2><strong>Total: {{$precioTotal}}</strong></h2>
+            <h2><strong>Total: $ {{$precioTotal}}</strong></h2>
         </div>
         <div class="btn-group col-lg-12 justify-content-between">
             <button class="btn btn-success">Finalizar Compra</button>
