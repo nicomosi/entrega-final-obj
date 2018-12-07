@@ -44,8 +44,6 @@
                                 @endguest
                             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="my-account">
 
-                                <li class="mdl-menu__item">Mi Perfil</li>
-                                <li class="mdl-menu__item">Cambiar Contraseña</li>
                                 @guest
 
                                 @else

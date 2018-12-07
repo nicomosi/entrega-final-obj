@@ -57,7 +57,12 @@
                                 <div class="product-details">
                                     <h5 class="title"><a href="/producto/{{$producto->id}}">{{$producto->nombre}}</a></h5>
                                     <div class="price">
-                                        <del>$179.99</del>{{$producto->precio}}
+                                        @if ($producto->descuento == 0)
+                                            ${{$producto->precio}}
+                                        @else
+                                            <del>${{$producto->precio}}</del>${{$producto->precioDescuento}}
+                                            {{-- <div class="price"><del>${{$producto->precio}}</del> ${{$producto->precioDescuento}}</div> --}}
+                                        @endif
                                     </div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
