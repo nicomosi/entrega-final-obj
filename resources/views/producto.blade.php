@@ -14,7 +14,7 @@
             <div class="layer-stretch">
                 <div class="page-ttl-container">
                     <h1>Producto <span class="text-primary">{{$producto->nombre}}</span></h1>
-                    <p><a href="{{Route('home')}}">Inicio</a> &#8594; <a href="{{Route('productosShow')}}">Productos</a> &#8594; <span>{{$producto->nombre}}</span></p>
+
                 </div>
             </div>
         </div><!-- End Page Title Section -->
@@ -77,7 +77,7 @@
                                     </div>
                                 </div>
                                 <div class="cart-button">
-                                    <a href="#" onclick="addCarrito" class="btn btn-dark"><i class="icon-basket mr-2"></i> Agregar al Carrito</a>
+                                    <a href="{{route('agregarItem', ['id'=>$producto->id])}}"  class="btn btn-dark"><i class="icon-basket mr-2"></i> Agregar al Carrito</a>
                                     <a href="#" class="btn btn-outline btn-primary btn-outline-2x"><i class="fa fa-shopping-cart mr-2"></i>Comprar</a>
                                 </div>
                             </div>
